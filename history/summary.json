@@ -10,11 +10,31 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 81,
-    "timeDay": 81,
-    "timeWeek": 81,
-    "timeMonth": 81,
-    "timeYear": 81,
+    "time": 103,
+    "timeDay": 103,
+    "timeWeek": 103,
+    "timeMonth": 103,
+    "timeYear": 103,
     "dailyMinutesDown": {}
+  },
+  {
+    "name": "Arkreen Test API Checker",
+    "url": "https://testapi.arkreen.com/v1",
+    "icon": "https://icons.duckduckgo.com/ip3/testapi.arkreen.com.ico",
+    "slug": "arkreen-test-api-checker",
+    "status": "down",
+    "uptime": "30.68%",
+    "uptimeDay": "30.68%",
+    "uptimeWeek": "30.68%",
+    "uptimeMonth": "30.68%",
+    "uptimeYear": "30.68%",
+    "time": 0,
+    "timeDay": 0,
+    "timeWeek": 0,
+    "timeMonth": 0,
+    "timeYear": 0,
+    "dailyMinutesDown": {
+      "2023-02-24": 0
+    }
   }
 ]
