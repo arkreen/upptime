@@ -5,12 +5,19 @@ repo: upptime # The name of this repository
 sites:
   - name: Arkreen
     url: https://arkreen.com
-  - name: Arkreen Test API Checker
+  - name: Arkreen Test API net_getVersion
     method: POST
     url: https://testapi.arkreen.com/v1
     headers:
       - "Content-Type: application/json"
     body: '{"jsonrpc":"2.0","method":"net_getVersion","id":1}'
+    __dangerous__insecure: true
+  - name: Arkreen Test API net_getBlockList
+    method: POST
+    url: https://testapi.arkreen.com/v1
+    headers:
+      - "Content-Type: application/json"
+    body: -d '{"jsonrpc":"2.0","method":"net_getBlockList","params":{"offset":1,"limit":25},"id":1}'
     __dangerous__insecure: true
 
 status-website:
