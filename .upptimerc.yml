@@ -19,6 +19,13 @@ sites:
       - "Content-Type: application/json"
     body: '{"jsonrpc":"2.0","method":"net_getBlockList","params":{"offset":1,"limit":25},"id":1}'
     __dangerous__insecure: true
+  - name: Arkreen Test API net_getAccountList
+    method: POST
+    url: https://testapi.arkreen.com/v1
+    headers:
+      - "Content-Type: application/json"
+    body: '{"jsonrpc":"2.0","method":"net_getAccountList","params":{"offset":1,"limit":25},"id":1}'
+    __dangerous__insecure: true
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
