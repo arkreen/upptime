@@ -17,7 +17,7 @@ sites:
     url: https://testapi.arkreen.com/v1
     headers:
       - "Content-Type: application/json"
-    body: -d '{"jsonrpc":"2.0","method":"net_getBlockList","params":{"offset":1,"limit":25},"id":1}'
+    body: '{"jsonrpc":"2.0","method":"net_getBlockList","params":{"offset":1,"limit":25},"id":1}'
     __dangerous__insecure: true
 
 status-website:
