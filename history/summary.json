@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 120,
-    "timeDay": 95,
-    "timeWeek": 120,
-    "timeMonth": 120,
-    "timeYear": 120,
+    "time": 111,
+    "timeDay": 79,
+    "timeWeek": 111,
+    "timeMonth": 111,
+    "timeYear": 111,
     "dailyMinutesDown": {}
   },
   {
@@ -28,11 +28,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 778,
-    "timeDay": 778,
-    "timeWeek": 778,
-    "timeMonth": 778,
-    "timeYear": 778,
+    "time": 864,
+    "timeDay": 864,
+    "timeWeek": 864,
+    "timeMonth": 864,
+    "timeYear": 864,
     "dailyMinutesDown": {}
   },
   {
@@ -40,19 +40,19 @@
     "url": "https://testapi.arkreen.com/v1",
     "icon": "https://icons.duckduckgo.com/ip3/testapi.arkreen.com.ico",
     "slug": "arkreen-test-api-net-get-block-list",
-    "status": "down",
-    "uptime": "16.43%",
-    "uptimeDay": "16.43%",
-    "uptimeWeek": "16.43%",
-    "uptimeMonth": "16.43%",
-    "uptimeYear": "16.43%",
-    "time": 181,
-    "timeDay": 181,
-    "timeWeek": 181,
-    "timeMonth": 181,
-    "timeYear": 181,
+    "status": "up",
+    "uptime": "1.66%",
+    "uptimeDay": "1.66%",
+    "uptimeWeek": "1.66%",
+    "uptimeMonth": "1.66%",
+    "uptimeYear": "1.66%",
+    "time": 229,
+    "timeDay": 229,
+    "timeWeek": 229,
+    "timeMonth": 229,
+    "timeYear": 229,
     "dailyMinutesDown": {
-      "2023-02-28": 0
+      "2023-02-28": 5
     }
   }
 ]
