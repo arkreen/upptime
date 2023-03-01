@@ -26,6 +26,23 @@ sites:
       - "Content-Type: application/json"
     body: '{"jsonrpc":"2.0","method":"net_getAccountList","params":{"offset":1,"limit":25},"id":1}'
     __dangerous__insecure: true
+  - name: Arkreen Test API net_getTransactionListByType
+    method: POST
+    url: https://testapi.arkreen.com/v1
+    headers:
+      - "Content-Type: application/json"
+    body: '{"jsonrpc":"2.0","method":"net_getTransactionListByType","params":{"offset":0,"limit":25},"id":1}'
+    __dangerous__insecure: true
+    __dangerous__body_down: "error"
+  - name: Arkreen Test API net_getMinerList
+    method: POST
+    url: https://testapi.arkreen.com/v1
+    headers:
+      - "Content-Type: application/json"
+    body: '{"jsonrpc":"2.0","method":"net_getMinerList","params":{"offset":0,"limit":25},"id":1}'
+    __dangerous__insecure: true
+    __dangerous__body_down: "error"
+
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
