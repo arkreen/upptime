@@ -12,20 +12,23 @@ sites:
       - "Content-Type: application/json"
     body: '{"jsonrpc":"2.0","method":"net_getVersion","id":1}'
     __dangerous__insecure: true
+    __dangerous__body_down: "error"
   - name: Arkreen Test API net_getBlockList
     method: POST
     url: https://testapi.arkreen.com/v1
     headers:
       - "Content-Type: application/json"
-    body: '{"jsonrpc":"2.0","method":"net_getBlockList","params":{"offset":1,"limit":25},"id":1}'
+    body: '{"jsonrpc":"2.0","method":"net_getBlockList","params":{"offset":0,"limit":25},"id":1}'
     __dangerous__insecure: true
+    __dangerous__body_down: "error"
   - name: Arkreen Test API net_getAccountList
     method: POST
     url: https://testapi.arkreen.com/v1
     headers:
       - "Content-Type: application/json"
-    body: '{"jsonrpc":"2.0","method":"net_getAccountList","params":{"offset":1,"limit":25},"id":1}'
+    body: '{"jsonrpc":"2.0","method":"net_getAccountList","params":{"offset":0,"limit":25},"id":1}'
     __dangerous__insecure: true
+    __dangerous__body_down: "error"
   - name: Arkreen Test API net_getTransactionListByType
     method: POST
     url: https://testapi.arkreen.com/v1
@@ -42,8 +45,81 @@ sites:
     body: '{"jsonrpc":"2.0","method":"net_getMinerList","params":{"offset":0,"limit":25},"id":1}'
     __dangerous__insecure: true
     __dangerous__body_down: "error"
-
-
+  - name: Arkreen Test API net_getAccountByAddress
+    method: POST
+    url: https://testapi.arkreen.com/v1
+    headers:
+      - "Content-Type: application/json"
+    body: '{"jsonrpc":"2.0","method":"net_getAccountByAddress","params":{"address": "0x6cd332b96e1b3e8d38253fb210d04e6d571e77ed"},"id":1}'
+    __dangerous__insecure: true
+    __dangerous__body_down: "error"
+  - name: Arkreen Test API net_getMinerListByOwner
+    method: POST
+    url: https://testapi.arkreen.com/v1
+    headers:
+      - "Content-Type: application/json"
+    body: '{"jsonrpc":"2.0","method":"net_getMinerListByOwner","params":{"address":"0x7e22eff00fb878319606aa085316e72e19e9761b","offset":0,"limit":10},"id":1}'
+    __dangerous__insecure: true
+    __dangerous__body_down: "error"
+  - name: Arkreen Test API net_getTransactionByHash
+    method: POST
+    url: https://testapi.arkreen.com/v1
+    headers:
+      - "Content-Type: application/json"
+    body: '{"jsonrpc":"2.0","method":"net_getTransactionByHash", "params": {"hash": "2d89ce0ad7f36862225b203d022ea4ae89f5aafa339637807a3983a95e1efd9a"},"id":1}'
+    __dangerous__insecure: true
+    __dangerous__body_down: "error"
+  - name: Arkreen Test API net_getBlockByHeight
+    method: POST
+    url: https://testapi.arkreen.com/v1
+    headers:
+      - "Content-Type: application/json"
+    body: '{"jsonrpc":"2.0","method":"net_getBlockByHeight","params":{"height": 122708},"id":1}'
+    __dangerous__insecure: true
+    __dangerous__body_down: "error"
+  - name: Arkreen Test API net_getBlockTransactionsByHeight
+    method: POST
+    url: https://testapi.arkreen.com/v1
+    headers:
+      - "Content-Type: application/json"
+    body: '{"jsonrpc":"2.0","method":"net_getBlockTransactionsByHeight","params":{"height": 122708},"id":1}'
+    __dangerous__insecure: true
+    __dangerous__body_down: "error"
+  - name: Arkreen Test API net_statMinerDailyReward
+    method: POST
+    url: https://testapi.arkreen.com/v1
+    headers:
+      - "Content-Type: application/json"
+    body: '{"jsonrpc":"2.0","method":"net_statMinerDailyReward" "params":{"address": "0x093c43e4863607f65527dbf6f3e42fd70d83af02","startTime":"2022-11-15T00:00:00.000Z","endTime":"2022-11-17T23:59:59.000Z"
+     },id":1}'
+    __dangerous__insecure: true
+    __dangerous__body_down: "error"
+  - name: Arkreen Test API net_statMinerGreenEnergyTrend
+    method: POST
+    url: https://testapi.arkreen.com/v1
+    headers:
+      - "Content-Type: application/json"
+    body: '{"jsonrpc":"2.0","method":"net_statMinerGreenEnergyTrend" "params":{"address": "0x093c43e4863607f65527dbf6f3e42fd70d83af02","startTime":"2022-11-15T00:00:00.000Z","endTime":"2022-11-17T23:59:59.000Z"
+     },id":1}'
+    __dangerous__insecure: true
+    __dangerous__body_down: "error"
+  - name: Arkreen Test API net_search
+    method: POST
+    url: https://testapi.arkreen.com/v1
+    headers:
+      - "Content-Type: application/json"
+    body: '{"jsonrpc":"2.0","method":"net_search",params: {"criteria": "1"},"id":1}'
+    __dangerous__insecure: true
+    __dangerous__body_down: "error"
+  - name: Arkreen Test API net_getMinerTransactionListByType
+    method: POST
+    url: https://testapi.arkreen.com/v1
+    headers:
+      - "Content-Type: application/json"
+    body: '{"jsonrpc":"2.0","method":"net_getMinerTransactionListByType","params":{"address": "0x5E1CCB55C07D6E80C5F13675AcC3a026C009eBd0", "offset":0, "type": 9},"id":1}'
+    __dangerous__insecure: true
+    __dangerous__body_down: "error"
+    
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
